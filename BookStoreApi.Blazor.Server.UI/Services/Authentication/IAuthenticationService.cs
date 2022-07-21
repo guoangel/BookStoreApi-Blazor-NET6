@@ -1,4 +1,6 @@
-﻿namespace BookStoreApi.Blazor.Server.UI.Services.Authentication
+﻿using BookStoreApi.Blazor.Server.UI.Services.Base;
+
+namespace BookStoreApi.Blazor.Server.UI.Services.Authentication
 {
     public interface IAuthenticationService
     {
