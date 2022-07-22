@@ -28,6 +28,7 @@ namespace BookStoreApi.Blazor.Server.UI.Providers
 
             if (tokenContent.ValidTo < DateTime.Now)
             {
+                await localStorage.RemoveItemAsync("accessToken");
                 return new AuthenticationState(user);
             }
 
